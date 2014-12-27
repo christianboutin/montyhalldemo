@@ -10,8 +10,9 @@ def PlayGame():
     #print "Player Selects: ",selected
 
     while(True):
+        # Can't remove a car, can't remove selected
         remove = random.randrange(0,3)
-        if (i[remove] == 0):
+        if (i[remove] == 0 and remove != selected):
             break
 
     #print "Monty removes: ",remove
